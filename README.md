@@ -1,4 +1,0 @@
-senchatouch
-===========
-
-Sencha Touch Code
