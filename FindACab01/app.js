@@ -21,8 +21,8 @@ Ext.application({
         'Main'
     ],
 
-    models: [
-        'Cab'
+    controllers: [
+        'CabController'
     ],
 
     icon: {
