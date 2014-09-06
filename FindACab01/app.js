@@ -9,6 +9,9 @@
     changes and its generated code, it will produce a "merge conflict" that you
     will need to resolve manually.
 */
+Ext.Loader.setPath({
+    'Utils': 'utils'
+});
 
 Ext.application({
     name: 'FindACab01',

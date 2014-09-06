@@ -15,18 +15,21 @@ Ext.define('FindACab01.controller.CabController', {
             main: 'mainview'
         },
         control: {
+            'mainview': {
+                initialize: 'onInitMain'
+            },
+            'button[action=press]': {
+                tap: 'onTapMain'
+            }
             
         }
     },
-    
-    init: function(){
-        console.log("On init app found "
-            + Ext.ComponentQuery.query('mainview').length
-            + " mainviews: ",
-            Ext.ComponentQuery.query('mainview')
-            );
-        console.log("On init app found the reference: ",
-            this.getMain());
+
+    onInitMain: function(){
+        console.log("Initialize mainview");
+    },
+    onTapMain: function(){
+        console.log("Tapped a button in mainview");
     },
 
     //called when the Application is launched, remove if not needed
