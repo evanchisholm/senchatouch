@@ -4,7 +4,8 @@ Ext.define('FindACab01.controller.CabController', {
     config: {
         
         models: [
-            'Cab'
+            'Cab',
+            'Car'
         ],
 
         stores: [

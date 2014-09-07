@@ -53,6 +53,39 @@ Ext.application({
 
         // Initialize the main view
         Ext.Viewport.add(Ext.create('FindACab01.view.Main'));
+
+        var car = Ext.create('FindACab01.model.Car', {
+            id: '1'
+        });
+
+        car.set('brand', 'BMW');
+
+        car.save({
+            success: function(){
+                console.log('The car record is saved');
+            },
+            failure: function(){
+                console.log('The car record could not be saved.');
+            }
+        });
+
+        car.erase({
+            success: function(){
+                console.log('The car record is removed');
+            },
+            failure: function(){
+                console.log('The car record could not be removed.');
+            }
+        });
+
+        Ext.ModelManager.getModel('FindACab01.model.Car').load(1, {
+            success: function(car) {
+                console.log("Load Car: " + car.getId());
+            },
+            failure: function() {
+                console.log("The car could not be loaded");
+            }
+        });
     },
 
     onUpdated: function() {

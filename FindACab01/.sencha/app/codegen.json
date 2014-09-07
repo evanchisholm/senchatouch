@@ -306,6 +306,30 @@
         "controllerNamespace": "FindACab01.controller",
         "name": "CabController"
       }
+    },
+    "app/model/Setting.js": {
+      "source": "{modelFileName}.js.tpl.merge",
+      "version": "b440abe61f1cfb3bbc31c9554696b4c7e9e2c329",
+      "parameters": {
+        "appName": "FindACab01",
+        "baseClass": "Ext.data.Model",
+        "fields": "id:auto:null,gps:boolean:null,city:string:null,country:string:null",
+        "modelFileName": "Setting",
+        "modelNamespace": "FindACab01.model",
+        "name": "Setting"
+      }
+    },
+    "app/model/Car.js": {
+      "source": "{modelFileName}.js.tpl.merge",
+      "version": "b440abe61f1cfb3bbc31c9554696b4c7e9e2c329",
+      "parameters": {
+        "appName": "FindACab01",
+        "baseClass": "Ext.data.Model",
+        "fields": "id:int:null,brand:string:null",
+        "modelFileName": "Car",
+        "modelNamespace": "FindACab01.model",
+        "name": "Car"
+      }
     }
   }
 }
